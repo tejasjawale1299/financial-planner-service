@@ -1,0 +1,52 @@
+{
+  "info": {
+    "_postman_id": "30eb239a-9126-4793-97e9-8a4598361984",
+    "name": "Financial Planner",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54338374",
+    "_collection_link": "https://go.postman.co/collection/54338374-30eb239a-9126-4793-97e9-8a4598361984?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Indivisual Planner Report",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-User-ID",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"full_name\": \"Tejas Jawale\",\n  \"contact\": \"7420871899\",\n  \"email\": \"tejasjawale67@gmail.com\",\n  \"dob\": \"1999-10-12\",\n  \"city\": \"Pune\",\n  \"marital_status\": \"single\",\n  \"spouse_age\": \"\",\n  \"spouse_income\": \"0\",\n  \"children_count\": \"0\",\n  \"dependents\": \"2\",\n  \"monthly_income\": \"70000\",\n  \"monthly_expenses\": \"35000\",\n  \"monthly_savings\": \"25000\",\n  \"education_1_today_cost\": \"1500000\",\n  \"marriage_1_today_cost\": \"1500000\",\n  \"retirement_age\": \"60\",\n  \"life_expectancy\": \"80\",\n  \"wealth_target_today\": \"1000000\",\n  \"wealth_target_age\": \"60\",\n  \"education_1_enabled\": \"on\",\n  \"marriage_1_enabled\": \"on\",\n  \"retirement_enabled\": \"on\",\n  \"wealth_enabled\": \"on\",\n  \"education_priority\": \"1\",\n  \"marriage_priority\": \"2\",\n  \"retirement_priority\": \"3\",\n  \"wealth_priority\": \"4\",\n  \"education_1_target_age\": \"18\",\n  \"education_1_inflation\": \"6\",\n  \"education_1_sip_return\": \"12\",\n  \"education_1_lumpsum_return\": \"10\",\n  \"marriage_1_target_age\": \"25\",\n  \"marriage_1_inflation\": \"6\",\n  \"marriage_1_sip_return\": \"12\",\n  \"marriage_1_lumpsum_return\": \"10\",\n  \"retirement_inflation\": \"6\",\n  \"retirement_pre_return\": \"12\",\n  \"retirement_post_return\": \"7\",\n  \"wealth_inflation\": \"6\",\n  \"wealth_sip_return\": \"12\",\n  \"wealth_lumpsum_return\": \"10\",\n  \"existing_life_term\": \"yes\",\n  \"existing_health\": \"yes\",\n  \"existing_critical\": \"yes\",\n  \"existing_personal\": \"yes\",\n  \"risk_appetite\": \"medium\",\n  \"investment_experience\": \"Intermediate\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/finance/financial-planner/report",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "finance",
+            "financial-planner",
+            "report"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
